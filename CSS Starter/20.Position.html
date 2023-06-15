@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .fixed-topbar {
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* body kısmında 1000px yaptık ki scroll çıksın. position:fixed ile de Udemy yazısı daima sabit kaldı. */
+            position: fixed;
+            /* alt taraftan 20px kalacak şekilde konumlandırsın.  */
+            bottom: 20px;
+            /* sağ tarafa sıfırlasın */
+            /* right: 0; */
+        }
+    </style>
+</head>
+<body style="height: 1000px;">
+    <div class="fixed-topbar">Udemy</div>
+</body>
+</html>

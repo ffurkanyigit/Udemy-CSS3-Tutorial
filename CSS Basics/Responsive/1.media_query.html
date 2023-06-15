@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design & Media Queries</title>
+    <style>
+      body{
+        background: red;
+      }
+      /* pc için arkaplanı red yaptık fakat tablette ve telefonda farklı renk olmasını istiyorum.*/
+      /* sayfamız büyük halindeyken normal çalışır. Ancak 768px olduğunda @media(max-width:768px) kuralları geçerli olacak. */
+      /* Tablet */
+      @media(max-width:768px){
+        body{
+          background: blue;
+        }
+      }
+      /* Telefon */
+      @media(max-width:500px){
+        body{
+          background: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>

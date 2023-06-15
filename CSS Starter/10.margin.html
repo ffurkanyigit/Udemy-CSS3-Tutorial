@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Margin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div.box-1 {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        /*alt alta yazmadan sıralamamız: top, right, bottom, left */
+        div.box-2 {
+            margin: 50px 20px 50px 20px
+        }
+        /*top-bottom, right-left */
+        div.box-3 {
+            margin: 50px 20px;
+        }
+        /* marginleri elle girmek yerine otomatik olarak hesaplar */
+        div.box-4 {
+            background: #a7a7a7;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* üst ve alt taraftan margin verme ancak sol ve sağa göre margin ayarla (tam ortaya getir)*/
+        div.box-5 {
+            background: #741414;
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, a.</div>
+    <div class="box-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, laborum!</div>
+    <div class="box-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, delectus.</div>
+    <div class="box-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, culpa.</div>
+    <div class="box-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dolor.</div>
+</body>
+</html>

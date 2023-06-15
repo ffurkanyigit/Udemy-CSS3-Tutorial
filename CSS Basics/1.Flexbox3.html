@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox - 3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            
+            min-height: 600px;
+            background: black;
+        }
+        .box {
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .box-1{
+            background: red;
+            /* flex-grow:1; Diğer kutularla beraber (1+2+3=6) container'in 6 da 1 ini doldurur. */
+            flex-grow: 1;
+            /* siyah boşlukların sadece iki renk ile dolmasını istersem, mavi kutu için flex:1; yada flex-grow:1; ve kırmızı kutu için flex:1; yada flex-grow:1; yazardık. */
+        }
+        .box-2{
+            background: blue;
+            /* flex-grow:2; Diğer kutularla beraber (1+2+3=6) container'in 6 da 2 sini doldurur. */
+            flex-grow: 2;
+            /* Eğer siyaqh alnın hepsinin mavi ile kaplanmasını isteseydim. Diğer iki kutudan flex-grow'ları silerdim ve sadece mavi kutu için flex-grow:1; yazardım yada flex:1; de yazabilirdim aynı şeydir. */
+        }
+        .box-3{
+            background: green;
+            /* flex-grow:3; Diğer kutularla beraber (1+2+3=6) container'in 6 da 3 ünü doldurur. */
+           flex-grow: 3;
+        }
+        /* siyah boşlukların sadece iki renk ile dolmasını istersem, mavi kutu için flex:1; yada flex-grow:1; ve kırmızı kutu için flex:1; yada flex-grow:1; yazardık. */
+    </style>
+</head>
+<body>
+    <!-- Flex Container-->
+    <div class="container">
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+    </div>
+</body>
+</html> 

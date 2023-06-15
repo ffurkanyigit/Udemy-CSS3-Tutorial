@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Flexbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            /* bütün kutularımız alt altayken flexbox ile yan yana gelecek */ 
+            display: flex;
+            /* default olarak flex-direction: row 'dur. Yanı satır olarak hizalar. */
+            /* fleax-drection: column alt alta sıralar */
+            flex-direction: row;
+            /* main axis'te flex itemlerı sıralamak için justify-content komutlarını kullanırız.*/
+            /* justify-content: flex-start; yani flex itemleri soldan başlatır default olarak böyledir. */
+            /* justify-content: flex-end; yani flex itemleri sağdan başlatır. */
+            /* justify-content: space-around; justify-content: space-between; justify-content: space-evenly; gibi üç adet aralarına boşluk verme işlemi de yapılabilir.*/
+            justify-content: flex-start;
+            /* align-items: stretch; Cross Axis için yükseklik belirler. Stretch default özelliğidir.  */
+            /* stretch; içinde bulunan div'in height'ı kadar bir yüksekliktir. */
+            /* align-items: center; içinde bulunan content kadar bir height alır. */
+            /* align-items: flex-start; */
+            min-height: 600px; /* minimum yükseklik 600px olsun ancak eğer içerik 600px'i geçerse height otomatik olarak artsın. */
+            /* flex-wrap: nowrap; Bütün itemlerimizi containerimizin içerisine sığdırmaya çalışır. Default olarak nowrap gelir. Ancak itemlerimizin width'leri küçülür. Eğer itemlerimizin withleri küçülmeden alt satıra geçmesini isterrsek flex-wrap: wrap; kodunu kullanırız. */
+            flex-wrap: wrap;
+            background: black;
+        }
+        .box{
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex Container-->
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 4</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 5</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 6</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 7</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 7</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 8</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 9</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 10</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 11</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 12</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 13</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 14</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>

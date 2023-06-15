@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Texts</title>
+    <style>
+        h1 {
+            background: seagreen;
+        }
+        .heading1 {
+            text-align: center;
+        }
+        .heading2 {
+            text-align: left;
+        }
+        .heading3 {
+            text-align: right;
+        }
+        div {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        p {
+            /* Harf aralığı */
+            letter-spacing: 3px;
+        }
+        span {
+            /* Altını çiz */
+            text-decoration: underline;
+        }
+        a {
+            /* a etiketlerinin altındaki çizgiyi siler */
+            text-decoration: none;
+        }
+        h2 {
+            /* Yazımızın başharfini büyük yapar */
+            text-transform: capitalize;
+        }
+        h3 {
+            /* Yazımızın hepsini büyük yazar */
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading1">Başlık 1</h1>
+    <h1 class="heading2">Başlık 2</h1>
+    <h1 class="heading3">Başlık 3</h1>
+    <div>
+        <h2>article 1</h2>
+        <p>Lorem <span>ipsum</span> <a href="#">dolor</a> , sit amet consectetur adipisicing elit. Beatae, culpa.</p>
+        <h3>article 2</h3>
+    </div>
+</body>
+</html>

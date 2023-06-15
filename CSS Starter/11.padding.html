@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Padding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* box-sizing:border-box kodu herkesce genel selector içine yazılır */
+        }
+        div.box-1 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        div.box-2 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 20px 20px 20px 20px;
+        }
+        div.box-3 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 20px;
+        }
+        div.box-4 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 20px 50px;
+        }
+        div.box-5 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 100px;
+            /* box-sizing:border-box kodu content+padding+border+margin=width olmasını sağlar. ;*/
+            box-sizing: border-box;
+        }
+        /* box-5 ve box-6 box-sizing özelliğine güzel birer örnek. */
+        div.box-6 {
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolor.</div>
+    <div class="box-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, eveniet?</div>
+    <div class="box-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, qui.</div>
+    <div class="box-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, provident!</div>
+    <div class="box-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nobis.</div>
+    <div class="box-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, maiores.</div>
+</body>
+</html>

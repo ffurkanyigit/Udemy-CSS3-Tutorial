@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive - CSS Units</title>
+  <!-- Responsive Units em,rem, %, vw, vh -->
+  <!-- em  : parent'ımızın font-size'na göre orantısal büyüklük. (1.5em=parent font-size*1.5) -->
+  <!-- rem : html etiketinin font-size'sine göre orantısal bir büyüklüktür.-->
+  <style>
+    html {
+      font-size: 10px;
+    }
+    div {
+      /* div'in parent'i body onun font-size'si 16px. div font-size=16.1.5 */
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.5em;
+      /* bu şekildeki kullanımlarda ise p'nin font-size*1.5=padding font-size'si */
+      padding: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, temporibus!</p>
+  </div>
+</body>
+</html>

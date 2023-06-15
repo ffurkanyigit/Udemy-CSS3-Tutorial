@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design & Media Queries - 1</title>
+    <style>
+        /* p elementini yok eder. */
+        p{
+            display: none;
+        }
+        /* Geniş ekrandan 768px'e kadar @media(min-width: 768px) özellikleri çalışacak. */
+        @media(min-width: 768px){
+            p{
+                display: block;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ullam.</p>
+  </body>
+</html>
